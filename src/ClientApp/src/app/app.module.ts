@@ -12,6 +12,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MembrosComponent } from './membros/membros.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { ContatoComponent } from './contato/contato.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { ContatoComponent } from './contato/contato.component';
       { path: 'membros', component: MembrosComponent },
       { path: 'projetos', component: ProjetosComponent},
       { path: 'contato', component: ContatoComponent}
-    ])
+    ]),
+    BrowserAnimationsModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
